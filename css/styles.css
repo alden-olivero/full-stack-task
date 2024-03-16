@@ -216,7 +216,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
-  background: linear-gradient(135deg, #4CAF50, #008CBA);
+  font-style: italic;
+  background: linear-gradient(135deg, #f3cb05, #ee1396);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -264,7 +265,7 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  color: blue;
+  color: #000000;
 
 }
 
@@ -10927,8 +10928,48 @@ textarea.form-control-lg {
 }
 
 
-
+span.red{
+  color: red;
+}
 .card-img-top:hover {
   
   opacity: 0.7; /* Adjust opacity to your preference */
+}
+.btn-add-to-cart {
+  background-color: #ff8566 ; /* Green */
+  color: #fff; /* White text */
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #991f00; /* Darker green on hover */
+}
+
+.btn-add-to-cart:focus {
+  outline: none; /* Remove focus outline */
+  box-shadow: none; /* Remove focus box shadow */
+}.banner {
+  background-color: yellow;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif; /* Specify a font */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add shadow */
+  border: 2px solid black; /* Add border */
+}
+
+.banner-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  letter-spacing: 2px; /* Increase letter spacing */
+}
+
+.banner-text-small {
+  font-size: 14px;
+
+  display: block;
+  margin-top: 5px;
+  color: #000;
 }
