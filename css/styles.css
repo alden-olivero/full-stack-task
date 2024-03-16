@@ -107,7 +107,7 @@ body {
   position: relative;
   overflow: hidden;
   animation: slideBg 20s linear infinite; /* Adjust timing as needed */
-  background-image: url('/Images/11.png'), url('/Images/11.png'); /* Add your image paths */
+  background-image: url('/Images/11.png'), url('/Images/21.jpg'); /* Add your image paths */
   background-size: 200% 100%; /* Adjust the width to accommodate both images */
 }
 
@@ -115,6 +115,89 @@ body {
   0% { background-position: 0 0; }
   100% { background-position: -100% 0; } /* Adjust the percentage based on the number of images you have */
 }
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Custom class for white links */
+.white-link {
+  color: #fff !important; /* Set link color to white */
+  text-decoration: none;
+}
+
+/* Custom class for custom font */
+.custom-font {
+  font-family: Arial, sans-serif; /* Custom font */
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links,
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.footer-links a,
+.footer-legal a {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.footer-social a {
+  margin-right: 10px;
+}
+
+.footer-social img {
+  height: 20px;
+  width: auto;
+}
+
+.footer-newsletter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.footer-newsletter input[type="email"] {
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  width: 70%;
+  margin-right: 10px;
+}
+
+.footer-newsletter button[type="submit"] {
+  background-color: #f00;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  width: 25%;
+  cursor: pointer;
+}
+
+/* Change link color on hover */
+.white-link:hover {
+  color: #fff; /* White color */
+}
+
 
 hr {
   margin: 1rem 0;

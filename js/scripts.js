@@ -5,4 +5,18 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+let cartCounter = 0;
 
+        // Function to increase cart counter
+        function addToCart() {
+            cartCounter++;
+            updateCartCounter();
+        }
+
+        // Function to update cart counter display
+        function updateCartCounter() {
+            const cartCounterElement = document.getElementById('cartCounter');
+            if (cartCounterElement) {
+                cartCounterElement.innerText = cartCounter;
+            }
+        }
