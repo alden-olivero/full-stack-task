@@ -103,20 +103,18 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 .header-bg {
   position: relative;
   overflow: hidden;
-  animation: slideBg 2s linear infinite; /* Adjust timing as needed */
-  background-image: url('/Images/1.webp'), url('/Images/1.webp'); /* Add your image paths */
-  background-size: cover;
+  animation: slideBg 20s linear infinite; /* Adjust timing as needed */
+  background-image: url('/Images/11.png'), url('/Images/11.png'); /* Add your image paths */
+  background-size: 200% 100%; /* Adjust the width to accommodate both images */
 }
 
 @keyframes slideBg {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); } /* Adjust the percentage based on the number of images you have */
+  0% { background-position: 0 0; }
+  100% { background-position: -100% 0; } /* Adjust the percentage based on the number of images you have */
 }
-
 
 hr {
   margin: 1rem 0;
@@ -135,6 +133,9 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
+  background: linear-gradient(135deg, #4CAF50, #008CBA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -180,6 +181,8 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  color: blue;
+
 }
 
 abbr[title] {
@@ -3766,6 +3769,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+  background: linear-gradient(135deg, #4CAF50, #008CBA);
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -10837,4 +10841,11 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+
+
+
+.card-img-top:hover {
+  
+  opacity: 0.7; /* Adjust opacity to your preference */
 }
