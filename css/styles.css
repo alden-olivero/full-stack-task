@@ -104,6 +104,20 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.header-bg {
+  position: relative;
+  overflow: hidden;
+  animation: slideBg 2s linear infinite; /* Adjust timing as needed */
+  background-image: url('/Images/1.webp'), url('/Images/1.webp'); /* Add your image paths */
+  background-size: cover;
+}
+
+@keyframes slideBg {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); } /* Adjust the percentage based on the number of images you have */
+}
+
+
 hr {
   margin: 1rem 0;
   color: inherit;
